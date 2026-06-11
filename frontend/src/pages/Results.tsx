@@ -26,6 +26,7 @@ import {
   Bot,
 } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+import logo from "@/assets/logo.svg";
 import { useText2SQL } from "@/hooks/useText2SQL";
 import { toast } from "sonner";
 import { Text2SQLResponse } from "@/services/api";
@@ -258,9 +259,9 @@ const Results = () => {
         <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
           <button onClick={() => navigate("/home")} className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
-              <Database className="w-5 h-5 text-primary-foreground" />
+              <img src={logo} alt="Allur Metric AI logo" className="w-5 h-5 brightness-0 invert" />
             </div>
-            <span className="font-bold text-foreground text-lg">Text2SQL</span>
+            <span className="font-bold text-foreground text-lg">Allur Metric AI</span>
           </button>
 
           <div className="flex items-center gap-4">

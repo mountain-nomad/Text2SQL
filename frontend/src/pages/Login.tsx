@@ -2,7 +2,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Database, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
+import logo from "@/assets/logo.svg";
 
 const Login = () => {
   const [username, setUsername] = useState("");
@@ -25,14 +26,14 @@ const Login = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-red-50 to-orange-100 flex items-center justify-center p-4">
       <div className="w-full max-w-md">
         {/* Logo */}
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 bg-primary rounded-2xl mb-4">
-            <Database className="w-8 h-8 text-primary-foreground" />
+            <img src={logo} alt="Allur Metric AI logo" className="w-8 h-8 brightness-0 invert" />
           </div>
-          <h1 className="text-3xl font-bold text-foreground">Text2SQL</h1>
+          <h1 className="text-3xl font-bold text-foreground">Allur Metric AI</h1>
           <p className="text-muted-foreground mt-2">
             Transform natural language to SQL
           </p>
